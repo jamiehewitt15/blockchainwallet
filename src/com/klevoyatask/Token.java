@@ -1,10 +1,10 @@
 package com.klevoyatask;
 
-public class token {
+public class Token {
     private int value;
     private int memory;
 
-    public token(int valueInput, int memoryInput){
+    public Token(int valueInput, int memoryInput){
         this.setValue(valueInput);
         this.setMemory(memoryInput);
     }
