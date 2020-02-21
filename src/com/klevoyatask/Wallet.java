@@ -77,16 +77,17 @@ public class Wallet {
                     this.removeToken(i);
                     this.removeToken(j);
                     this.updateStoredTokens(token);
-                    break;
+                    break outerloop;
                 } else for (Token k : storedTokens) {
                     if (i != j && j != k && i.getMemory() + j.getMemory() + k.getMemory() + getAvailableMemory() >= token.getMemory() && i.getValue() + j.getValue() + k.getValue() < token.getValue()) {
                         this.removeToken(i);
                         this.removeToken(j);
                         this.removeToken(k);
                         this.updateStoredTokens(token);
-                        break;
+                        break outerloop;
                     } else {
                         System.out.println("No coins have been added to the wallet");
+                        System.out.println("Available memory: " + getAvailableMemory());
                         printWallet();
                         break outerloop;
 

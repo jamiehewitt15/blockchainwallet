@@ -6,7 +6,7 @@ public class Main {
 
         Token bitcoin = new Token( "Bitcoin", 15, 4);
         Token ethereum = new Token( "Ethereum",10, 3);
-        Token zCash = new Token("ZCash",5,3);
+        Token zCash = new Token("ZCash",5,2);
         Token ripple = new Token("Ripple",3,1);
 
         Wallet mainWallet = new Wallet(8);
